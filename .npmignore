@@ -1,5 +1,6 @@
-# Publish dist to npm but not to repo
-!dist/
+# x Publish dist to npm but not to repo
+# Publishing to repo, not to npm
+# !dist/
 
 # Ignore List
 _config.yml
