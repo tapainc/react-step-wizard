@@ -6,7 +6,7 @@ import postcss from 'rollup-plugin-postcss';
 import { eslint } from 'rollup-plugin-eslint';
 import { uglify } from 'rollup-plugin-uglify';
 import filesize from 'rollup-plugin-filesize';
-import copy from 'rollup-plugin-copy'
+import copy from 'rollup-plugin-copy';
 
 import app from './package.json';
 
@@ -47,8 +47,8 @@ export default {
         filesize(),
         copy({
             targets: [
-              { src: 'src/index.d.ts', dest: 'dist' }
-            ]
-        })
+                { src: 'src/index.d.ts', dest: 'dist' },
+            ],
+        }),
     ],
 };

@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
+import { Pane } from 'evergreen-ui';
 import Animate from './animate.custom.css';
 import styles from './styles.css';
 
@@ -197,12 +198,12 @@ export default class StepWizard extends PureComponent {
         });
 
         return (
-            <div className={this.props.className}>
+            <Pane display="flex" flexGrow={1} className={this.props.className}>
                 {this.props.nav && React.cloneElement(this.props.nav, props)}
                 <div className={styles['step-wrapper']}>
                     {childrenWithProps}
                 </div>
-            </div>
+            </Pane>
         );
     }
 }
